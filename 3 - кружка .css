@@ -1,0 +1,236 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background: linear-gradient(135deg, #FDF0E6, #F5D9C4, #EDCDB0);
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+}
+
+a {
+  color: #2B2B2B;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:visited {
+  color: #5A4A3A;
+}
+
+a:hover {
+  color: #D4826C;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.container {
+  padding-left: 5px;
+  padding-right: 5px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: -70px;
+}
+
+@media (min-width: 780px) {
+  .container {
+    width: 760px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    width: 970px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1170px;
+  }
+}
+
+.landing-page header {
+  min-height: 80px;
+  display: flex;
+}
+
+@media (max-width: 767px) {
+  .landing-page header {
+    min-height: auto;
+    display: initial;
+  }
+}
+
+.landing-page header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+@media (max-width: 767px) {
+  .landing-page header .container {
+    flex-direction: column;
+    justify-content: center;
+  }
+}
+
+.landing-page header .links {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 900px) {
+  .landing-page header .links {
+    text-align: center;
+    gap: 20px;
+    justify-content: center;
+  }
+}
+
+.landing-page header .links li {
+  margin-left: 10px;
+  color: #2B2B2B;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.landing-page header .links li:nth-child(5),
+.landing-page header .links li:nth-child(6) {
+  border-radius: 30px;
+  padding: 10px 24px;
+  color: #FFFFFF;
+  background-color: #1A1A1A;
+  transition: all 0.3s ease;
+}
+
+.landing-page header .links li:nth-child(5):hover,
+.landing-page header .links li:nth-child(6):hover {
+  background-color: #D4826C;
+  transform: translateY(-2px);
+}
+
+.landing-page header .links li:nth-child(5) a,
+.landing-page header .links li:nth-child(6) a {
+  color: #FFFFFF;
+}
+
+.landing-page header .links li:nth-child(5) a:hover,
+.landing-page header .links li:nth-child(6) a:hover {
+  color: #FFFFFF;
+}
+
+@media (max-width: 900px) {
+  .landing-page header .links li {
+    margin-left: auto;
+  }
+}
+
+.landing-page .content .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 80px;
+  min-height: calc(100vh - 80px);
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .container {
+    gap: 30px;
+    min-height: calc(100vh - 101px);
+    justify-content: center;
+    flex-direction: column-reverse;
+    text-align: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .info {
+    text-align: center;
+    margin-bottom: 15px;
+  }
+}
+
+.landing-page .content .info h1 {
+  color: #2B2B2B;
+  font-size: 44px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .info h1 {
+    font-size: 32px;
+  }
+}
+
+.landing-page .content .info p {
+  margin: 0;
+  line-height: 1.7;
+  font-size: 16px;
+  color: #4A3B32;
+  max-width: 500px;
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .info p {
+    max-width: 100%;
+    font-size: 15px;
+  }
+}
+
+.landing-page .content .info button {
+  border: none;
+  border-radius: 40px;
+  padding: 14px 36px;
+  margin-top: 35px;
+  cursor: pointer;
+  color: #FFFFFF;
+  background-color: #1A1A1A;
+  font-size: 16px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.landing-page .content .info button:hover {
+  background-color: #D4826C;
+  transform: translateY(-2px);
+}
+
+.landing-page .content .info button a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.landing-page .content .image {
+  flex: 1;
+  text-align: center;
+}
+
+.landing-page .content .image img {
+  max-width: 100%;
+  max-height: 450px;
+  margin-top: 30px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.landing-page .content .image img:hover {
+  transform: scale(1.02);
+}
+
+@media (max-width: 767px) {
+  .landing-page .content .image img {
+    max-height: 300px;
+    margin-top: 20px;
+  }
+}
